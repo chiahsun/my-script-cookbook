@@ -8,3 +8,45 @@
 :icons: font
 
 // include::xcode.adoc[]
+
+== Resize Images on the Command Line
+
+On Mac, to use `convert`
+
+```bash
+brew install imagemagick
+```
+
+=== Run Simulation for Commands First
+link:./resize_image/sim.sh[sim.sh]
+
+[source,bash]
+----
+include::./resize_image/sim.sh[lines=1]
+----
+
+.Sample output
+[source,text]
+bash sim.sh
+convert -resize 15% ./IMG_1758.jpg ./IMG_1758.jpg?...
+convert -resize 15% ./IMG_1728.jpg ./IMG_1728.jpg?...
+
+link:./resize_image/resize.sh[resize.sh]
+
+CAUTION: The following command resizes the original images. If your want to rename or put images in another folder, please modify the command and/or run simulation or backup the files first.
+
+[source,bash]
+----
+include::./resize_image/resize.sh[lines=1]
+----
+
+=== Reference
+
+https://apple.stackexchange.com/questions/335635/where-is-the-convert-command-in-macos[Convert in MacOS]
+
+https://askubuntu.com/questions/271776/how-to-resize-an-image-through-the-terminal[Resize on the Command Line]
+
+https://blog.gtwang.org/linux/xargs-command-examples-in-linux-unix/[Xargs Usage]
+
+
+
