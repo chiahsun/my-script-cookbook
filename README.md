@@ -1,1 +1,1 @@
-# my_script_cookbook
+# my-script-cookbook

@@ -1,0 +1,10 @@
+= My Script Cookbook
+:doctype: book
+:publication-type: book
+:toc: left
+:toclevels: 3 
+:source-highlighter: highlight.js 
+:source-language: bash
+:icons: font
+
+// include::xcode.adoc[]
