@@ -49,4 +49,25 @@ https://askubuntu.com/questions/271776/how-to-resize-an-image-through-the-termin
 https://blog.gtwang.org/linux/xargs-command-examples-in-linux-unix/[Xargs Usage]
 
 
+== Sed
+
+=== Replace strings
+
+Described in:
+
+https://stackoverflow.com/questions/11392478/how-to-replace-a-string-in-multiple-files-in-linux-command-line[SO]
+
+https://unix.stackexchange.com/questions/112023/how-can-i-replace-a-string-in-a-files/112024#112024[SO]
+
+Note this command replace strings for the same file.
+
+[source,bash]
+sed -i '' 's/cool/COOL/g' *.xml
+
+
+This command moves the original file with suffix `.bak`
+
+[source,bash]
+sed -i '.bak' 's/cool/COOL/g' *.xml
+
 
