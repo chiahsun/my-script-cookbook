@@ -1,4 +1,4 @@
-.PHONY: build view
+.PHONY: build view md
 
 all: build view
 
@@ -8,3 +8,10 @@ build:
 view:
 	open index.html
 
+%.xml: %.adoc
+	asciidoctor -b docbook $<
+
+%.md: %.xml
+	pandoc -f docbook -t gfm $< -o $@
+
+md: jq.md

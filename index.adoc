@@ -70,4 +70,4 @@ This command moves the original file with suffix `.bak`
 [source,bash]
 sed -i '.bak' 's/cool/COOL/g' *.xml
 
-
+include::jq.adoc[]
